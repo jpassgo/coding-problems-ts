@@ -1,0 +1,68 @@
+# Node.js
+node_modules/
+
+# Dependency directories
+/lib/
+/vendor/
+
+# Compiled TypeScript
+/dist/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Visual Studio Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# JetBrains IDEs
+.idea/
+
+# npm package files
+*.log
+npm-debug.log*
+
+# Environment variables file
+.env
+
+# User-specific files
+.DS_Store
+.idea
+.vscode
+npm-debug.log*
+
+# Compiled Java class files
+*.class
+
+# Compiled Python bytecode
+__pycache__/
+*.pyc
+
+# Compiled Ruby bytecode
+*.rbc
+
+# Compiled Rust files
+/target/
+
+# Compiled Go files
+*.out
+
+# Compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Generated files by editors
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
