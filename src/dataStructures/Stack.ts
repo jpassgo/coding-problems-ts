@@ -7,11 +7,11 @@ class Stack<T> {
     this.items.push(value);
   } 
 
-  pop(): T | undefined {
-    return this.items.pop();
+  pop() {
+    return this.items?.pop();
   }
 
-  peek(): T | undefined {
+  peek() {
     return this.items[this.items.length - 1];
   }
 
@@ -27,3 +27,5 @@ class Stack<T> {
     this.items = [];
   }
 }
+
+export default Stack;

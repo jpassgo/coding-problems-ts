@@ -17,4 +17,10 @@ class MyNode {
   getChildren(): MyNode[] {
     return this.children;
   }
+
+  getValue(): number {
+    return this.value;
+  }
 }
+
+export default MyNode;

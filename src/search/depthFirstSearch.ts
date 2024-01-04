@@ -1,4 +1,5 @@
-
+import Stack from '../dataStructures/Stack';
+import MyNode from '../dataStructures/MyNode';
 
 // For depth first search we will utilize a stack to help us step through each nodes children.
 //  We should be able to achieve this in O(n) since in the worst case we will visit each node once
@@ -19,11 +20,25 @@ root.addChild(three);
 root.addChild(six);
 
 
-function depthFirstSeach(root: MyNode): boolean {
+function depthFirstSeach(root: MyNode, value: number): boolean {
 
-  let stack: MyNode[] = [];
+  let stack: Stack<MyNode> = new Stack<MyNode>();
+
   stack.push(root);
 
-  while (stack.)
+  while (!stack.isEmpty()) {
+    const node: MyNode = stack!.pop()!;
+    if (value === node.getValue()) {
+      return true;
+    }
+
+    for (const child of node.getChildren()) {
+      stack.push(child);
+    }
+  }
+  
   return false;
 }
+
+console.log(depthFirstSeach(root, 2));
+console.log(depthFirstSeach(root, 17));
