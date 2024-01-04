@@ -21,7 +21,6 @@ root.addChild(six);
 
 
 function depthFirstSeach(root: MyNode, value: number): boolean {
-
   let stack: Stack<MyNode> = new Stack<MyNode>();
 
   stack.push(root);
